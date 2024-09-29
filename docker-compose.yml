@@ -6,8 +6,6 @@ services:
         env_file:
             - .env
         volumes:
-            - ./config.yml:/app/config.yml
+            - ./config.yml:/config.yml
         build:
             dockerfile: ./Dockerfile
-        volumes:
-            - '.:/workspace'
