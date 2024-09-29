@@ -1,0 +1,9 @@
+version: '3'
+name: do-dyndns
+services:
+    project:
+        container_name: do-dyndns
+        build:
+            dockerfile: ./Dockerfile.dev
+        volumes:
+            - '.:/workspace'

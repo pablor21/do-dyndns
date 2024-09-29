@@ -1,0 +1,19 @@
+// https://aka.ms/devcontainer.json
+{
+	"name": "Echo etag",
+	"dockerComposeFile": [
+		"./docker-compose.dev.yml"
+	],
+	"service": "project",
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"golang.go",
+				"github.copilot"
+			],
+			"settings": {}
+		}
+	},
+	"shutdownAction": "none"
+}

@@ -1,0 +1,4 @@
+.private
+config.yml
+.env
+.DS_Store

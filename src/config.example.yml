@@ -1,0 +1,7 @@
+digital_ocean:
+  token: "your_digital_ocean_token"
+ip_client: 
+  uri: "https://api.ipify.org/?format=json"
+interval: 60
+domains:
+  - domain.com

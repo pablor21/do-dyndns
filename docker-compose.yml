@@ -1,0 +1,13 @@
+version: '3'
+name: do-dyndns
+services:
+    project:
+        container_name: do-dyndns
+        env_file:
+            - .env
+        volumes:
+            - ./config.yml:/app/config.yml
+        build:
+            dockerfile: ./Dockerfile
+        volumes:
+            - '.:/workspace'

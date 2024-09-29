@@ -1,0 +1,23 @@
+FROM golang:alpine
+
+RUN apk upgrade --no-cache && \
+    apk add --no-cache \
+    bash \
+    curl \
+    git \
+    openssh \
+    openssl \
+    sudo \
+    vim \
+    wget \
+    && \
+    rm -rf /var/cache/apk/*
+
+WORKDIR /workspace
+
+
+
+#COPY . .
+EXPOSE 80
+
+CMD [ "/bin/sh", "-c", "while sleep 1000; do :; done"]
