@@ -2,3 +2,4 @@
 config.yml
 .env
 .DS_Store
+!config.example.yml
